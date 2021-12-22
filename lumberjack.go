@@ -123,12 +123,9 @@ type Logger struct {
 	// PostHandler is the handler after rotating of the file. Notify the remote server
 	// or some others to do something, such as transfer the file to the FILE-STORAGE-SYS.
 	PostHandler PostRotateCallback
-	// newFileName is the file be rotated. It is used by transfer server. For detail call liping_chang@intsig.net
 	//	newFileName string
 	postData struct {
-		// newFileName is the file be rotated. It is used by transfer server. For detail call liping_chang@intsig.net
 		newFileName string
-		// newFileSize is the file size be rotated. It is used by transfer server. For detail call liping_chang@intsig.net
 		newFileSize int64
 		// current database and table name
 		db, tb, date    string
